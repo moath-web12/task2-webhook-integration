@@ -1,0 +1,86 @@
+2026-10-08 01:00:57
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:00:57
+Customer ID: 2 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 01:01:09
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:01:09
+Error: Duplicate phone 0509998877
+-------------------
+2026-10-08 01:01:14
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:01:14
+Error: Duplicate phone 0509998877
+-------------------
+2026-10-08 01:01:59
+Incoming Request: {
+  "name": "خالد ",
+  "phone": "0598760877",
+  "email": "kaled@example.com"
+}
+-------------------
+2026-10-08 01:02:00
+Customer ID: 3 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 01:07:16
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0598760877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:16
+Error: Duplicate phone 0598760877
+-------------------
+2026-10-08 01:07:28
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0598760877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:28
+Error: Duplicate phone 0598760877
+-------------------
+2026-10-08 01:07:49
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:50
+Customer ID: 4 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 14:36:51
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 14:36:51
+Error: Duplicate phone 0595660877
+-------------------
+2026-10-08 14:38:27
+Incoming Request: 
+-------------------
+2026-10-08 14:38:27
+Error: Invalid data provided
+-------------------
