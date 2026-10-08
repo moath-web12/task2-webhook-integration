@@ -1,34 +1,37 @@
-# Task 2 - Webhook Integration
+# Task 2 - Webhook & External API Integration
 
-## وصف المشروع
+خدمة Webhook تستقبل بيانات العملاء عبر REST API وتتحقق منها، ثم تحفظها في قاعدة البيانات وتسجل التفاصيل في سجلات النظام (Logs)[cite: 7].
 
-هذا المشروع عبارة عن Webhook API لاستقبال بيانات العملاء بصيغة JSON، والتحقق من صحة البيانات، وحفظها في قاعدة بيانات MySQL، ثم إرسال بيانات العميل إلى API خارجي وتسجيل نتيجة العملية.
+---
 
-## المميزات
+## 🔄 مسار العمل (Flow)
+`Incoming Webhook` ➔ `Validation` ➔ `Duplicate Check` ➔ `Database` ➔ `External API` ➔ `Logging`[cite: 7]
 
-- استقبال طلبات Webhook بصيغة JSON.
-- التحقق من وجود اسم العميل ورقم الهاتف.
-- منع تسجيل العميل أكثر من مرة باستخدام رقم الهاتف.
-- حفظ بيانات العملاء في قاعدة البيانات.
-- إرسال بيانات العميل إلى API خارجي باستخدام cURL.
-- تسجيل نتيجة الاتصال بالـ API الخارجي.
-- تسجيل العمليات والأخطاء في ملف `app.log`.
-- إرجاع استجابات JSON مع HTTP Status Codes مناسبة.
+---
 
-## المتطلبات
+## ⚙️ طريقة التشغيل (Setup Steps)
 
-- XAMPP أو أي Web Server يدعم PHP.
-- PHP.
-- MySQL.
-- تفعيل PDO MySQL.
-- تفعيل cURL.
-- متصفح أو Postman لاختبار الـ API.
+1. **إعداد قاعدة البيانات:**
+   * قم باستيراد ملف `database.sql` داخل سيرفر MySQL المحلّي[cite: 7].
+2. **ضبط بيانات الاتصال:**
+   * تأكد من مطابقة إعدادات قاعدة البيانات في ملف `config/database.php`[cite: 7].
 
-## طريقة التثبيت
+---
 
-### 1. وضع المشروع
+## 🚀 طريقة الاختبار والتنفيذ (Execution)
 
-ضع مجلد المشروع داخل مجلد `htdocs` في XAMPP:
+افتح برنامج **Postman** وقم بإعداد الطلب كالتالي:
 
-```text
-C:\xampp\htdocs\task2-webhook-integration
+* **Method:** `POST`[cite: 7]
+* **URL:** `http://localhost/task2-webhook-integration/webhook/customer.php`[cite: 7]
+* **Headers:** `Content-Type: application/json`
+
+### 📄 بيانات الطلب (Sample Request Payload):
+اختر **Body** ➔ **raw** ➔ **JSON** وضَع الكود التالي:
+
+```json
+{
+  "name": "Ahmed Ali",
+  "phone": "0551234567",
+  "email": "ahmed@example.com"
+}
