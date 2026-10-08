@@ -1,16 +1,34 @@
-# Task 2 - Webhook & External API Integration
+# Task 2 - Webhook Integration
 
-خدمة تستقبل بيانات العميل عبر Webhook وتحفظها ثم ترسلها لـ REST API خارجي مع تسجيل كامل التفاصيل.
+## وصف المشروع
 
-## Flow
-Incoming Webhook → Validation → Duplicate Check → Database → External API → Logging
+هذا المشروع عبارة عن Webhook API لاستقبال بيانات العملاء بصيغة JSON، والتحقق من صحة البيانات، وحفظها في قاعدة بيانات MySQL، ثم إرسال بيانات العميل إلى API خارجي وتسجيل نتيجة العملية.
 
-## Endpoint
-`POST /webhook/customer.php`
+## المميزات
 
-```json
-{
-  "name": "Ahmed Ali",
-  "phone": "0551234567",
-  "email": "ahmed@example.com"
-}
+- استقبال طلبات Webhook بصيغة JSON.
+- التحقق من وجود اسم العميل ورقم الهاتف.
+- منع تسجيل العميل أكثر من مرة باستخدام رقم الهاتف.
+- حفظ بيانات العملاء في قاعدة البيانات.
+- إرسال بيانات العميل إلى API خارجي باستخدام cURL.
+- تسجيل نتيجة الاتصال بالـ API الخارجي.
+- تسجيل العمليات والأخطاء في ملف `app.log`.
+- إرجاع استجابات JSON مع HTTP Status Codes مناسبة.
+
+## المتطلبات
+
+- XAMPP أو أي Web Server يدعم PHP.
+- PHP.
+- MySQL.
+- تفعيل PDO MySQL.
+- تفعيل cURL.
+- متصفح أو Postman لاختبار الـ API.
+
+## طريقة التثبيت
+
+### 1. وضع المشروع
+
+ضع مجلد المشروع داخل مجلد `htdocs` في XAMPP:
+
+```text
+C:\xampp\htdocs\task2-webhook-integration
