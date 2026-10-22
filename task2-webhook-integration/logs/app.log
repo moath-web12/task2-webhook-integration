@@ -1,0 +1,169 @@
+2026-10-08 01:00:57
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:00:57
+Customer ID: 2 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 01:01:09
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:01:09
+Error: Duplicate phone 0509998877
+-------------------
+2026-10-08 01:01:14
+Incoming Request: {
+  "name": "علي ",
+  "phone": "0509998877",
+  "email": "ali@example.com"
+}
+-------------------
+2026-10-08 01:01:14
+Error: Duplicate phone 0509998877
+-------------------
+2026-10-08 01:01:59
+Incoming Request: {
+  "name": "خالد ",
+  "phone": "0598760877",
+  "email": "kaled@example.com"
+}
+-------------------
+2026-10-08 01:02:00
+Customer ID: 3 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 01:07:16
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0598760877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:16
+Error: Duplicate phone 0598760877
+-------------------
+2026-10-08 01:07:28
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0598760877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:28
+Error: Duplicate phone 0598760877
+-------------------
+2026-10-08 01:07:49
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 01:07:50
+Customer ID: 4 | External API Status: 0 | Result: FAILED
+-------------------
+2026-10-08 14:36:51
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 14:36:51
+Error: Duplicate phone 0595660877
+-------------------
+2026-10-08 14:38:27
+Incoming Request: 
+-------------------
+2026-10-08 14:38:27
+Error: Invalid data provided
+-------------------
+2026-10-08 15:45:21
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 15:45:21
+Error: Duplicate phone 0595660877
+-------------------
+2026-10-08 15:45:29
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 15:45:29
+Error: Duplicate phone 0595660877
+-------------------
+2026-10-08 15:45:34
+Incoming Request: {
+  "name": "فهد ",
+  "phone": "0595660877",
+  "email": "fahd@example.com"
+}
+-------------------
+2026-10-08 15:45:34
+Error: Duplicate phone 0595660877
+-------------------
+2026-10-08 16:00:05
+Incoming Request: {
+  "name": "Ahmed Ali",
+  "phone": "0551234567",
+  "email": "ahmed@example.com"
+}
+-------------------
+2026-10-08 16:00:05
+Customer ID: 6 | External API Status: 200 | Result: SUCCESS
+-------------------
+[2026-10-20 18:59:29] CRITICAL DB ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'internship_db.integration_logs' doesn't exist
+[2026-10-20 19:06:34] INFO: Customer ID 1 created. Integration Log ID 1 initialized as PENDING.
+[2026-10-20 19:06:36] SUCCESS: Customer ID 1 synced with External API (HTTP 201).
+[2026-10-20 19:11:42] INFO: Customer ID 2 created. Integration Log ID 2 initialized as PENDING.
+[2026-10-20 19:11:47] SUCCESS: Customer ID 2 synced with External API (HTTP 201).
+[2026-10-20 19:18:44] INFO: Customer ID 3 created. Integration Log ID 3 initialized as PENDING.
+[2026-10-20 19:18:48] SUCCESS: Customer ID 3 synced with External API (HTTP 201).
+[2026-10-20 19:20:08] INFO: Customer ID 4 created. Integration Log ID 4 initialized as PENDING.
+[2026-10-20 19:20:18] ERROR: External API sync failed for Customer ID 4. cURL Error (28): Operation timed out after 10003 milliseconds with 0 bytes received
+[2026-10-20 19:26:43] INFO: Customer ID 5 created. Integration Log ID 5 initialized as PENDING.
+[2026-10-20 19:26:45] SUCCESS: Customer ID 5 synced with External API (HTTP 201).
+[2026-10-20 19:28:34] INFO: Customer ID 6 created. Integration Log ID 6 initialized as PENDING.
+[2026-10-20 19:28:35] SUCCESS: Customer ID 6 synced with External API (HTTP 201).
+[2026-10-21 18:44:49] INFO: Customer ID 8 created. Integration Log ID 7 initialized as PENDING.
+[2026-10-21 18:44:49] SUCCESS: Customer ID 8 synced with External API (HTTP 201).
+[2026-10-21 18:48:51] INFO: Customer ID 9 created. Integration Log ID 8 initialized as PENDING.
+[2026-10-21 18:48:52] SUCCESS: Customer ID 9 synced with External API (HTTP 201).
+[2026-10-21 18:53:28] INFO: Customer ID 11 created. Integration Log ID 9 initialized as PENDING.
+[2026-10-21 18:53:33] SUCCESS: Customer ID 11 synced with External API (HTTP 201).
+[2026-10-21 18:54:43] INFO: Customer ID 12 created. Integration Log ID 10 initialized as PENDING.
+[2026-10-21 18:54:44] SUCCESS: Customer ID 12 synced with External API (HTTP 201).
+[2026-10-21 18:59:21] INFO: Customer ID 15 created. Integration Log ID 11 initialized as PENDING.
+[2026-10-21 18:59:31] ERROR: External API sync failed for Customer ID 15. cURL Error (28): Operation timed out after 10001 milliseconds with 0 bytes received
+[2026-10-21 19:00:18] INFO: Customer ID 16 created. Integration Log ID 12 initialized as PENDING.
+[2026-10-21 19:00:22] SUCCESS: Customer ID 16 synced with External API (HTTP 201).
+[2026-10-21 19:11:01] INFO: Customer ID 17 created. Integration Log ID 13 initialized as PENDING.
+[2026-10-21 19:11:05] SUCCESS: Customer ID 17 synced with External API (HTTP 201).
+[2026-10-21 19:12:09] INFO: Customer ID 18 created. Integration Log ID 14 initialized as PENDING.
+[2026-10-21 19:12:19] SUCCESS: Customer ID 18 synced with External API (HTTP 201).
+[2026-10-21 19:14:46] INFO: Customer ID 19 created. Integration Log ID 15 initialized as PENDING.
+[2026-10-21 19:14:51] SUCCESS: Customer ID 19 synced with External API (HTTP 201).
+[2026-10-22 08:44:52] CRITICAL DB ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'internship_db.integration_logs' doesn't exist
+[2026-10-22 08:46:21] CRITICAL DB ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'internship_db.integration_logs' doesn't exist
+[2026-10-22 08:49:43] INFO: Customer ID 10 created. Integration Log ID 1 initialized as PENDING.
+[2026-10-22 08:49:44] SUCCESS: Customer ID 10 synced with External API (HTTP 201).
+[2026-10-22 10:09:26] INFO: Customer ID 11 created. Integration Log ID 2 initialized as PENDING.
+[2026-10-22 10:09:27] SUCCESS: Customer ID 11 synced with External API (HTTP 201).
+[2026-10-22 10:09:46] INFO: Customer ID 12 created. Integration Log ID 3 initialized as PENDING.
+[2026-10-22 10:09:46] SUCCESS: Customer ID 12 synced with External API (HTTP 201).
+[2026-10-22 10:11:05] INFO: Customer ID 13 created. Integration Log ID 4 initialized as PENDING.
+[2026-10-22 10:11:06] SUCCESS: Customer ID 13 synced with External API (HTTP 201).
+[2026-10-22 10:11:32] INFO: Customer ID 14 created. Integration Log ID 5 initialized as PENDING.
+[2026-10-22 10:11:33] SUCCESS: Customer ID 14 synced with External API (HTTP 201).
